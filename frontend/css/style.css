@@ -1,0 +1,148 @@
+.upper-part {
+    margin-bottom: 100px;
+}
+
+.upper-part ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: None;
+}
+
+.upper-part a {
+    text-decoration: None;
+}
+
+.intro {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+#my_form {
+    display: flex;
+    width: 600px;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#response-area {
+    background-color: #b1d7a3;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.user {
+    background-color: #cce4ff;
+    align-self: flex-end;
+    text-align: left;
+}
+
+.bot {
+    background-color: #fff6cc;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.timestamp {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+#my_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#my_button:hover {
+    background-color: #111;
+}
+
+#clear-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
