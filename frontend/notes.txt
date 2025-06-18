@@ -5,6 +5,4 @@
 5) Below it is a chat form
 6) And some kind of a footer
 
-
-
 Comment for 4th - potentially change the layout - instruction to be displayed on the left side of the screen and the chatbox on the right

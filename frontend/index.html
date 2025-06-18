@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>PushkinAI</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>Echo Of Inc</title>
+<link rel="stylesheet" href="../frontend/css/style.css">
 </head>
-    <body> 
-        <header>
-            <nav class="upper_line">
-                <ul>
-                    <li><a href="#">Inspiration</a></li>
-                    <li><a href="#">Technical Details</a></li>
-                </ul>
-            </nav>
 
-            <hr>
-            
-            <div class="name_logo">
-                <img src="../frontend/images/pushkin.png" alt="PushkinAI" class="logo">
-                <h1>PushkinAI</h1>
+<body>
+    <header>
+        <nav class="upper_line">
+            <ul>
+                <li><a href="#" data-tab="generate">Generate</a></li>
+                <li><a href="#" data-tab="compare">Comparasion</a></li>
+                <li><a href="#" data-tab="about">About</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="logo_name">
+        <img src="../frontend/images/pushkin.png" alt="Echo" class="logo">
+        <h1>Echo Of Inc</h1>
+    </div>
+    </header>
+
+    <main>
+        <section id="generate" class="tab active">
+            <div class="selectors"> 
+                <select id="model_selector">
+                    <option value="RNN">RNN</option>
+                    <option value="GPT-2">GPT-2</option>
+                    <option value="GPT-3.5">GPT-3.5</option>
+                </select>
+                <select id="poet_selector">
+                    <option value="Pushkin">Pushkin</option>
+                    <option value="Lermontov">Lermontov</option>
+                    <option value="Shakespeare">Shakespeare</option>
+                </select>
             </div>
 
-            </div>
-        </header>
+            <div id="response_area"></div>
+            <form id="chat_form">
+                <input type="text" id="user_input" placeholder="Enter here..." required>
+                <button type="submit" id="submit_button">Submit!</button>
+            </form>
+            <button id="clear_button">Clear Chat</button>
+        </section>
+        
+        <section id="compare" class="tab">
+            <h1>Model Comparasion</h1>
+            <p>To be built...</p>
+        </section>
 
+        <section id="about" class="tab">
+            <h1>About the project...</h1>
+            <p>To be built...</p>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Artemii Badianov</p>
+    </footer>
 
-        <main>
-
-            <section class="chat_section">
-                <div id="response_area"></div>
-                <form id="chat_form"> 
-                    <input type="text" id="user_input" placeholder="Enter here..." required>
-                    <button type="submit" id="submit_button">Submit!</button>
-                </form>
-                <button id="click_button">Clear Chat</button>
-            </section>
-        </main>
-
-
-        <footer>
-            <span>Made by Artemii Badianov</span>
-        </footer>
-
-        <script src="../frontend/js/script.js"></script>
-    </body>
-</html
+<script src="../frontend/js/script.js"></script>
+</body>
+</html>
