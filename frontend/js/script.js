@@ -1,43 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('my_form');
-    const response_area = document.getElementById('response-area');
-    const user_input = document.getElementById('user-input');
-    const clear_btn = document.getElementById('clear-btn');
+const response_area = document.getElementById('response_area');
+const chat_form  = document.getElementById('chat_form');
+const user_input = document.getElementById('user_input');
+const click_button = document.getElementById('click_button');
 
-    const botReplies = [
-        "Interesting, go on...",
-        "Pushkin would've liked that.",
-        "What else can you tell me?",
-        "Hmm, fascinating.",
-        "I see. Please continue.",
-        "That reminds me of a poem..."
-    ];
+const randomReplies = ['Me', 'You', 'We'];
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const userText = user_input.value.trim();
-        if (userText === '') return;
+chat_form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-        const timestamp = new Date().toLocaleTimeString();
+    const timestemp = new Date().toLocaleTimeString();
 
-        // user message
-        const userMsg = document.createElement('div');
-        userMsg.className = 'chat-bubble user';
-        userMsg.innerHTML = `<strong>You:</strong> ${userText} <span class="timestamp">${timestamp}</span>`;
-        response_area.appendChild(userMsg);
+    const query = user_input.value.trim();
 
-        // bot message
-        const botMsg = document.createElement('div');
-        botMsg.className = 'chat-bubble bot';
-        const randomResponse = botReplies[Math.floor(Math.random() * botReplies.length)];
-        botMsg.innerHTML = `<strong>PushkinAI:</strong> ${randomResponse} <span class="timestamp">${timestamp}</span>`;
-        response_area.appendChild(botMsg);
+    const userMsg = document.createElement('div');
+    userMsg.className = 'message-box user';
+    userMsg.innerHTML = `You: ${query} <span class="timestemp">${timestemp}</span>`;
+    response_area.appendChild(userMsg);
 
-        user_input.value = '';
-        response_area.scrollTop = response_area.scrollHeight;
-    });
+    const botMsg = document.createElement('div');
+    const currentReply = randomReplies[Math.floor((Math.random() * randomReplies.length))];
+    botMsg.className = 'message-box bot';
+    botMsg.innerHTML = `Bot: ${currentReply} <span class="timestemp">${timestemp}</span>`;
+    response_area.appendChild(botMsg);
 
-    clear_btn.addEventListener('click', () => {
-        response_area.innerHTML = '';
-    });
+    user_input.value = ``;
+    response_area.scrollTop = response_area.scrollHeight;
+});
+
+click_button.addEventListener('click', () => {
+    response_area.innerHTML = '';
+});
 });

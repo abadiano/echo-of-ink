@@ -1,44 +1,48 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <title>PushkinAI</title>
-    <link rel="stylesheet" href="../frontend/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+    <body> 
+        <header>
+            <nav class="upper_line">
+                <ul>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Technical Details</a></li>
+                </ul>
+            </nav>
 
-<body>
-    <header>
-        <nav class="upper-part">
-            <ul> 
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Technical Details</a></li>
-            </ul>
-        </nav>
-    </header>
+            <hr>
+            
+            <div class="name_logo">
+                <img src="../frontend/images/pushkin.png" alt="PushkinAI" class="logo">
+                <h1>PushkinAI</h1>
+            </div>
 
-    <main>
-        <section class="intro">
-            <img src="../frontend/images/pushkin.png" alt="PushkinAI" class="logo">
-            <h1>PushkinAI</h1>
-        </section>
+            </div>
+        </header>
 
-        <section id="chat-box">
-            <div id="response-area"></div>
 
-            <form id="my_form"> 
-                <input id="user-input" type="text" placeholder="Enter here...">
-                <button id="my_button" type="submit">Submit!</button>
-            </form>
-            <button id="clear-btn">Clear Chat</button>
-        </section>
-    </main>
+        <main>
 
-    <footer>
-        <p>All rights reserved</p>
-        <p>Made by Artemii Badianov</p>
-    </footer>
+            <section class="chat_section">
+                <div id="response_area"></div>
+                <form id="chat_form"> 
+                    <input type="text" id="user_input" placeholder="Enter here..." required>
+                    <button type="submit" id="submit_button">Submit!</button>
+                </form>
+                <button id="click_button">Clear Chat</button>
+            </section>
+        </main>
 
-    <script src="../frontend/js/script.js">
-    </script>
+
+        <footer>
+            <span>Made by Artemii Badianov</span>
+        </footer>
+
+        <script src="../frontend/js/script.js"></script>
     </body>
-</html>
+</html
