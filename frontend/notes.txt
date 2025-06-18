@@ -1,0 +1,10 @@
+1) Generally speaking 3 pages: main; inspiration - kinda why i did it; technical - RNNs; GPT-2; Open AI call; maybe LSTM; GNU;
+2) top of screen - two links - inspiration and technical
+3) Below it - proly image + tool name, for now PushkinAI
+4) Below it usage instruction, which would reference two other pages
+5) Below it is a chat form
+6) And some kind of a footer
+
+
+
+Comment for 4th - potentially change the layout - instruction to be displayed on the left side of the screen and the chatbox on the right

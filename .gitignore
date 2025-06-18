@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.env
+.venv/
+echo_venv/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.bak
+.env.*
