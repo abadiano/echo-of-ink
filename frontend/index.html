@@ -1,70 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Echo Of Ink</title>
+<html lang="en">
+<head> 
+    <title>Echo of Inc</title>
     <link rel="stylesheet" href="../frontend/css/style.css">
 </head>
-
 <body>
-
     <header>
         <nav class="top_line">
             <ul>
-                <li><a href="#" data-tab="generate">Generate</a></li>
-                <li><a href="#" data-tab="comparison">Comparison</a></li>
-                <li><a href="#" data-tab="about">About</a></li>
+                <li> <a href="#" data-tab="generate">Generate</a></li>
+                <li> <a href="#" data-tab="comparison">Comparison</a></li>
+                <li> <a href="#" data-tab="about">About</a></li>
             </ul>
-            <hr>
-            <div class="logo_name">
-                <img src="../frontend/images/pushkin.png" alt="Pushkin" class="logo">
-                <h1>Echo Of Ink</h1>
-            </div>
         </nav>
+        <hr>
+        <div class="logo_name">
+            <img src="../frontend/images/pushkin.png" alt="pushkin" class="logo">
+            <h1>Echo of Inc</h1>  
+        </div>
     </header>
 
-
     <main>
-
         <section id="generate" class="tab active">
-            <div class=selectors>
+            <div class="dropdowns">
                 <select id="model_selector">
                     <option value="RNN">RNN</option>
                     <option value="GPT-2">GPT-2</option>
                     <option value="GPT-3">GPT-3</option>
                 </select>
-
                 <select id="author_selector">
                     <option value="Pushkin">Pushkin</option>
                     <option value="Tolstoy">Tolstoy</option>
-                    <option value="Shakespeara">Shakespeara</option>
+                    <option value="Shakespear">Shakespear</option>
                 </select>
             </div>
-
+            
             <div id="response_area"></div>
             <form id="chat_form">
-                <input type="text" id="user_input" placeholder="Enter prompt here..." required>
-                <button type="submit" id="submit_button">Submit!</button>
+                <input id= "user_input" type="text" placeholder="Enter prompt here: ..." required>
+                <button id="submit_button">Submit!</button>
             </form>
-            <button id="clear_button">Clear area</button>
+            <button id="clear_button">Clear Chat</button>
             <span id="char_counter">0 characters</span>
-             </section>
-
+        </section>
         <section id="comparison" class="tab">
-            <h1>Comparison Page</h1>
+            <h1>Comparsion page</h1>
             <p>To be done...</p>
         </section>
-
         <section id="about" class="tab">
-            <h1>About Page</h1>
+            <h1>About page</h1>
             <p>To be done...</p>
         </section>
     </main>
-
-
-    <footer>
-        <p>Made by Artemii Badianov</p>
-    </footer>
-
+    <footer><p>Made by Artemii Badianov</p></footer>
     <script src="../frontend/js/script.js"></script>
 </body>
 </html>
