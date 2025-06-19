@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<title>Echo Of Inc</title>
-<link rel="stylesheet" href="../frontend/css/style.css">
+    <title>Echo Of Ink</title>
+    <link rel="stylesheet" href="../frontend/css/style.css">
 </head>
 
 <body>
+
     <header>
-        <nav class="upper_line">
+        <nav class="top_line">
             <ul>
                 <li><a href="#" data-tab="generate">Generate</a></li>
-                <li><a href="#" data-tab="compare">Comparasion</a></li>
+                <li><a href="#" data-tab="comparison">Comparison</a></li>
                 <li><a href="#" data-tab="about">About</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <div class="logo_name">
-        <img src="../frontend/images/pushkin.png" alt="Echo" class="logo">
-        <h1>Echo Of Inc</h1>
-    </div>
+            </ul>
+            <hr>
+            <div class="logo_name">
+                <img src="../frontend/images/pushkin.png" alt="Pushkin" class="logo">
+                <h1>Echo Of Ink</h1>
+            </div>
+        </nav>
     </header>
 
+
     <main>
+
         <section id="generate" class="tab active">
-            <div class="selectors"> 
+            <div class=selectors>
                 <select id="model_selector">
                     <option value="RNN">RNN</option>
                     <option value="GPT-2">GPT-2</option>
-                    <option value="GPT-3.5">GPT-3.5</option>
+                    <option value="GPT-3">GPT-3</option>
                 </select>
-                <select id="poet_selector">
+
+                <select id="author_selector">
                     <option value="Pushkin">Pushkin</option>
-                    <option value="Lermontov">Lermontov</option>
-                    <option value="Shakespeare">Shakespeare</option>
+                    <option value="Tolstoy">Tolstoy</option>
+                    <option value="Shakespeara">Shakespeara</option>
                 </select>
             </div>
 
             <div id="response_area"></div>
             <form id="chat_form">
-                <input type="text" id="user_input" placeholder="Enter here..." required>
+                <input type="text" id="user_input" placeholder="Enter prompt here..." required>
                 <button type="submit" id="submit_button">Submit!</button>
             </form>
-            <button id="clear_button">Clear Chat</button>
-        </section>
-        
-        <section id="compare" class="tab">
-            <h1>Model Comparasion</h1>
-            <p>To be built...</p>
+            <button id="clear_button">Clear area</button>
+            <span id="char_counter">0 characters</span>
+             </section>
+
+        <section id="comparison" class="tab">
+            <h1>Comparison Page</h1>
+            <p>To be done...</p>
         </section>
 
         <section id="about" class="tab">
-            <h1>About the project...</h1>
-            <p>To be built...</p>
+            <h1>About Page</h1>
+            <p>To be done...</p>
         </section>
     </main>
+
+
     <footer>
         <p>Made by Artemii Badianov</p>
     </footer>
 
-<script src="../frontend/js/script.js"></script>
+    <script src="../frontend/js/script.js"></script>
 </body>
 </html>

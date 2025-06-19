@@ -1,21 +1,26 @@
-.upper_line ul {
-    list-style: None;
+@media (max-width: 600px) {
+    .logo_name {
+        flex-direction: column;
+    }
+}    
+
+.top_line ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    list-style: None;
 }
 
-.upper_line ul li {
+.top_line a {
+    text-decoration: None;
+}
+
+.top_line li {
     padding: 10px 10px;
-    border: 1px solid rgb(201, 185, 185);
+    background-color: rgb(221, 230, 148);
     border-radius: 10px;
-    background-color: rgb(234, 242, 163);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.upper_line a {
-    text-decoration: none;
+    border: 1px solid rgb(231, 199, 199);
 }
 
 .logo {
@@ -27,136 +32,102 @@
 .logo_name {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(96, 196, 251);
-    margin-bottom: 50px;
-    margin-top: 50px;
+    word-spacing: 2px;
+    color: rgb(99, 138, 223);
+    margin-bottom: 40px;
 }
+
 
 #response_area {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(197, 254, 254);
     border-radius: 10px;
     border: 1px solid black;
-    background-color: aquamarine;
-    width: 700px;
-    height: 400px;
+    overflow-y: auto;
 }
 
 
-.chat_box {
+.message_box {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+
 }
 
 .user {
-    padding: 10px 10px;
-    background-color: burlywood;
     align-self: flex-end;
+    background-color: rgb(195, 137, 137);
 }
-
-
 .bot {
-    padding: 10px 10px;
-    background-color: blue;
     align-self: flex-start;
+    background-color: rgb(172, 139, 202);
 }
 
-.timestamp{
+.timestamp {
     display: block;
 }
 
 
-
-
-.chat_box{
-    max-width: 80%;
-    padding: 10px 15px;
-    margin: 6px 0;
-    border-radius: 18px;
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word;
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-.user {
-    background-color: #0b9b17;
-    align-self: flex-end;
-    text-align: left;
-}
-
-.bot {
-    background-color: #fff6cc;
-    align-self: flex-start;
-    text-align: left;
-}
-
-
-
-
-select {
-    border-radius: 10px;
-    padding: 10px 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid black;
-}
-
 #chat_form {
     display: flex;
-    gap: 20px;
-    flex: 1;
-
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
 #user_input {
-    flex: 1;
-    width: 600px;
+    width: 500px;
+    padding: 10px 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #submit_button {
-    background-color: black;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 15px;
     border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
 }
 
 #clear_button {
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
-
-footer {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(138, 138, 138);
-}
-
 
 .tab.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
-
 
 .tab {
     display: none;
 }
 
+footer {
+    display: flex;
+    color: rgb(56, 59, 59);
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200px;
+
+}
 
 body {
     background-color: aliceblue;
