@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <title>Echo of Inc</title>
-    <link rel="stylesheet" href="../frontend/css/style.css">
-</head>
-<body>
+  <head>
+    <title>Echo of Ink</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
     <header>
-        <nav class="top_line">
-            <ul>
-                <li> <a href="#" data-tab="generate">Generate</a></li>
-                <li> <a href="#" data-tab="comparison">Comparison</a></li>
-                <li> <a href="#" data-tab="about">About</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <div class="logo_name">
-            <img src="../frontend/images/pushkin.png" alt="pushkin" class="logo">
-            <h1>Echo of Inc</h1>  
-        </div>
+      <nav class="my_nav">
+        <ul>
+          <li><a href="#" data-tab="generate">Generate</a></li>
+          <li><a href="#" data-tab="comparison">Comparison</a></li>
+          <li><a href="#" data-tab="about">About</a></li>
+        </ul>
+      </nav>
+
+      <hr />
+      <div class="logo_name">
+        <img src="./images/pushkin.png" alt="pushkin" class="logo" />
+        <h1>Echo of Ink</h1>
+      </div>
     </header>
 
     <main>
-        <section id="generate" class="tab active">
-            <div class="dropdowns">
-                <select id="model_selector">
-                    <option value="RNN">RNN</option>
-                    <option value="GPT-2">GPT-2</option>
-                    <option value="GPT-3">GPT-3</option>
-                </select>
-                <select id="author_selector">
-                    <option value="Pushkin">Pushkin</option>
-                    <option value="Tolstoy">Tolstoy</option>
-                    <option value="Shakespear">Shakespear</option>
-                </select>
-            </div>
-            
-            <div id="response_area"></div>
-            <form id="chat_form">
-                <input id= "user_input" type="text" placeholder="Enter prompt here: ..." required>
-                <button id="submit_button">Submit!</button>
-            </form>
-            <button id="clear_button">Clear Chat</button>
-            <span id="char_counter">0 characters</span>
-        </section>
-        <section id="comparison" class="tab">
-            <h1>Comparsion page</h1>
-            <p>To be done...</p>
-        </section>
-        <section id="about" class="tab">
-            <h1>About page</h1>
-            <p>To be done...</p>
-        </section>
+      <section id="generate" class="active tab">
+        <div class="selectors">
+          <select id="model_selector">
+            <option value="RNN">RNN</option>
+            <option value="GPT-2">GPT-2</option>
+            <option value="GPT-3.5">GPT-3.5</option>
+          </select>
+          <select id="author_selector">
+            <option value="Pushkin">Pushkin</option>
+            <option value="Lermontov">Lermontov</option>
+            <option value="Tolstoy">Tolstoy</option>
+          </select>
+        </div>
+        <div id="response_area"></div>
+        <form id="my_form">
+          <input id="user_input" type="text" placeholder="Type here" required />
+          <button id="submit_button" type="submit">Send query!</button>
+        </form>
+        <button id="clear_button">Clear it!</button>
+        <span id="char_counter">0 characters</span>
+      </section>
+      <section id="comparison" class="tab">
+        <h1>Comparison page</h1>
+        <p>To be added...</p>
+      </section>
+      <section id="about" class="tab">
+        <h1>About page</h1>
+        <p>To be added...</p>
+      </section>
     </main>
-    <footer><p>Made by Artemii Badianov</p></footer>
-    <script src="../frontend/js/script.js"></script>
-</body>
+    <footer>
+      <p>Made by Artemii Badianov</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
